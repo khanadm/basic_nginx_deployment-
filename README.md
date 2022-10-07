@@ -46,27 +46,18 @@
    - This will take you through the steps of renewal. LetsEncrypt will only allow renewal when the certificate is within 30 days of expiry. Once renewed the new certificate will be valid for 90 days from the date of renewal.
 
 Renewing the certificate in this manner will not require you to stop and start Nginx and the Nginx config will be reloaded on a successful renewal so that visitors to the site are automatically served the new certificate. 
-
-#### Automating The SSL Certificate Renewal For Nginx
-```
-SHELL=/bin/sh
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-
-0 */12 * * * root certbot -q renew --nginx
-
-```
-   - 
-   - 
-   - 
-
-   - 
-
-
-   - 
-   - 
    
-
-
+   - cat /etc/cron.d/certbot
+   - ![image](https://user-images.githubusercontent.com/106643382/194525632-ff00a7ce-afbf-43d9-93f7-a8f7bcaad78c.png)
    - 
+   - 
+   - certbot renew --cert-name task1354.ml --force-renewal
+   - 
+   - ![image](https://user-images.githubusercontent.com/106643382/194526267-991ae8aa-61c0-4acd-aeaf-83ff923daa43.png)
+
+   
+   
+   
+      ######                                        THANK YOU 
 
 
