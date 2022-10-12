@@ -25,7 +25,12 @@
    - Then attach elastic ip for server using [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
    - ![image](https://user-images.githubusercontent.com/106643382/194306762-dd2361f6-d266-4062-a37a-8d67272a746f.png)
    - Then purchase a domain name for server from freenom (task1354.ml)
-   - cd /etc/nginx/sites/task1354.ml
+   - cd /etc/nginx/sites-available/task1354.ml
+   - In this we have to configure Domain name & Document root path 
+   - ![image](https://user-images.githubusercontent.com/106643382/195326106-0906ae69-ced1-4895-8329-8584cfb963f6.png)
+   - ![image](https://user-images.githubusercontent.com/106643382/195326248-2f5e5133-b319-401d-88d8-dbc44c62c68b.png)
+   - ![image](https://user-images.githubusercontent.com/106643382/195326375-134d9092-adaa-48ce-828b-cc16e969b7c0.png)
+   - ![image](https://user-images.githubusercontent.com/106643382/195326553-abb11cd1-11ed-400c-a20b-3c81eb7c1ae4.png)
    - In this we have to give domain name
    - ![image](https://user-images.githubusercontent.com/106643382/194309542-d8254d64-6054-4627-bea1-3dc0617d0dfa.png)
    - nginx -t 
