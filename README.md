@@ -9,23 +9,39 @@
 - Configure domain and apply SSL.
 - Configure automation script for SSL renewal.
 
-#### Create an EC2 server
- #### Insatll nginx in it 
+#### First step: Create an EC2 server
+
+  - Firstly, log in to the AWS management console.
+  - After login, navigate to the search bar, type EC2, and select EC2
+  - Now, the EC2 dashboard will appear. Click Instances
+  - Click the Launch instances button.
+  - To launch an EC2 instance, a few details are required, i.e., instance name, OS image (AMI), instance type, etc.
+  - Select a key pair to attach with the instance to log in with that key.
+  - Click the Launch instance button
+  - Take the public IP from the EC2 dashboard and use it to login inside the instance using ssh.
+  - Finally, it will be logged in successfully if everything is configured correctly.
+  
+ #### Second Step:  Insatll nginx in it
  
-   - sudo apt update
+   - First, update the list of packages using ```sudo apt update```
    - ![image](https://user-images.githubusercontent.com/106643382/194303969-31a845ea-6fb2-46cc-8501-74ec71645bda.png)
-   - sudo apt install nginx
-   - sudo systemctl start nginx
-   - sudo systemctl status nginx
+   - Now, install Nginx using ```sudo apt install nginx```
+   - To start Nginx run this command ```sudo systemctl start nginx```
+   - To check status of nginx ```sudo systemctl status nginx```
    - ![image](https://user-images.githubusercontent.com/106643382/194305213-0e81676e-2354-48bb-b4e7-072e4d5a8395.png)
-   - vim /var/www/html 
+   - To check whether Nginx is successfully installed or not, use ```sudo nginx -v```
+   
+   #### Third Step: Step Create a sample index.html page and deploy it on that Nginx server.
+   
+   - For this, navigate to document root ```vim /var/www/html``` and create an index.html page using vim or nano. 
    - ![image](https://user-images.githubusercontent.com/106643382/194305528-8a7052a8-417a-4f04-9adb-de840316b7a1.png)
+   - For exit press Esc then press this : wq to exit.
    - it will show on web server like this
    - ![image](https://user-images.githubusercontent.com/106643382/194306272-2f858b8f-8d76-440f-b1b2-047850c811cb.png)
    - Then attach elastic ip for server using [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
    - ![image](https://user-images.githubusercontent.com/106643382/194306762-dd2361f6-d266-4062-a37a-8d67272a746f.png)
    - Then purchase a domain name for server from freenom (task1354.ml)
-   - cd /etc/nginx/sites-available/task1354.ml
+   - ```cd /etc/nginx/sites-available/task1354.ml
    - In this we have to configure Domain name & Document root path 
    - ![image](https://user-images.githubusercontent.com/106643382/195326106-0906ae69-ced1-4895-8329-8584cfb963f6.png)
    - ![image](https://user-images.githubusercontent.com/106643382/195326248-2f5e5133-b319-401d-88d8-dbc44c62c68b.png)
@@ -34,9 +50,11 @@
    - In this we have to give domain name
    - ![image](https://user-images.githubusercontent.com/106643382/194309542-d8254d64-6054-4627-bea1-3dc0617d0dfa.png)
    - nginx -t 
-   - this will show every thing is ok
-#### Install cetbox for SSL CERTIFICATION
-   -  apt-get update
+   - this will show every thing is ok.
+   
+   #### Fourth step Insatall cetbox for SSL CERTIFICATION
+   
+   -` apt-get update
    -  sudo apt-get install certbot
    -  apt-get install python3-certbot-nginx
    -  
