@@ -52,7 +52,7 @@
    - nginx -t 
    - This will show every thing is ok.
    
-   #### Fourth step Insatall cetbox for SSL CERTIFICATION
+   #### Fourth step : Insatall cetbox for SSL CERTIFICATION
    
    - ``` apt-get update```
    - ```sudo apt-get install certbot```
