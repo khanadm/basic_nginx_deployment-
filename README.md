@@ -37,7 +37,8 @@
     ![image](https://user-images.githubusercontent.com/106643382/194305528-8a7052a8-417a-4f04-9adb-de840316b7a1.png)
    - For exit press Esc then press this : wq to exit.
    - It will show on web server like this
-     ![image](https://user-images.githubusercontent.com/106643382/194306272-2f858b8f-8d76-440f-b1b2-047850c811cb.png)
+     ![image](https://user-images.githubusercontent.com/106643382/196166855-db2adc87-44fe-48c7-b4e4-74995cf12de7.png)
+![image](https://user-images.githubusercontent.com/106643382/196166792-dc372445-224d-4df9-bb9e-9e96f400acf1.png)
    - Then attach elastic ip for server using [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
      ![image](https://user-images.githubusercontent.com/106643382/194306762-dd2361f6-d266-4062-a37a-8d67272a746f.png)
    - Then purchase a domain name for server from freenom (task1354.ml)
