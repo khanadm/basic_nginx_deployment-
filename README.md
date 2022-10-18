@@ -91,9 +91,9 @@
    
    - This will issue certificate (in my case my domain name is task1354.ml)
   
-    ![image](https://user-images.githubusercontent.com/106643382/194316641-7c403bad-1eeb-4f86-8494-18df87a95637.png)
+   ![image](https://user-images.githubusercontent.com/106643382/194316641-7c403bad-1eeb-4f86-8494-18df87a95637.png)
    
-   ##### Fifth Step : Configure automation script for SSL renewal.
+   #### Fifth Step : Configure automation script for SSL renewal.
   
      
    - This will take you through the steps of renewal. LetsEncrypt will only allow renewal when the certificate is within 30 days of expiry. Once               renewed the new certificate will be valid for 90 days from the date of renewal.
