@@ -103,7 +103,7 @@
    
    - ```cat /etc/cron.d/certbot```
   
-    ![image](https://user-images.githubusercontent.com/106643382/194525632-ff00a7ce-afbf-43d9-93f7-a8f7bcaad78c.png)
+      ![image](https://user-images.githubusercontent.com/106643382/194525632-ff00a7ce-afbf-43d9-93f7-a8f7bcaad78c.png)
    
    - ``` certbot renew --cert-name task1354.ml --force-renewal```
     
