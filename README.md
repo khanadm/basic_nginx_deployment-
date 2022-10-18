@@ -94,14 +94,13 @@
     ![image](https://user-images.githubusercontent.com/106643382/194316641-7c403bad-1eeb-4f86-8494-18df87a95637.png)
    
    ##### Fifth Step : Configure automation script for SSL renewal.
-   
-     - ```sudo certbot renew --nginx```
+  
      
    - This will take you through the steps of renewal. LetsEncrypt will only allow renewal when the certificate is within 30 days of expiry. Once               renewed the new certificate will be valid for 90 days from the date of renewal.
 
    -  Renewing the certificate in this manner will not require you to stop and start Nginx and the Nginx config will be reloaded on a successful renewal        so that visitors to the site are automatically served the new certificate. 
    
-   - ```cat /etc/cron.d/certbot```
+   - Certbot automatically creates the script to renew the certificate twice a day. ```cat /etc/cron.d/certbot```
   
       ![image](https://user-images.githubusercontent.com/106643382/194525632-ff00a7ce-afbf-43d9-93f7-a8f7bcaad78c.png)
    
