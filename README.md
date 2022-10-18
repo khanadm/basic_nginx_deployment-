@@ -28,21 +28,23 @@
    - Now, install Nginx using ```sudo apt install nginx```
     
    - To start Nginx run this command ```sudo systemctl start nginx```
-   
-   - To enable nginx Run this command ```sudo systemctl enable nginx``` 
     
    - To check status of nginx ```sudo systemctl status nginx```
    
      ![image](https://user-images.githubusercontent.com/106643382/194305213-0e81676e-2354-48bb-b4e7-072e4d5a8395.png)
      
+   - To enable nginx Run this command ```sudo systemctl enable nginx``` 
+     
    - To check whether Nginx is successfully installed or not, use ```sudo nginx -v```
+
+
    
    #### Third Step: Step Create a sample index.html page and deploy it on that Nginx server.
    
+   
+   
    - For this, navigate to document root ```cd /var/www/html``` and create an index.html page using vim or nano.
-   -  
-    ![image](https://user-images.githubusercontent.com/106643382/194305528-8a7052a8-417a-4f04-9adb-de840316b7a1.png)
-    
+   - 
    - For exit press Esc then press this : wq to exit.
    
    - It will show on web server like this
