@@ -48,11 +48,15 @@
    - For exit press Esc then press this : wq to exit.
    
    - It will show on web server like this
+  
      ![image](https://user-images.githubusercontent.com/106643382/196166855-db2adc87-44fe-48c7-b4e4-74995cf12de7.png)
-![image](https://user-images.githubusercontent.com/106643382/196166792-dc372445-224d-4df9-bb9e-9e96f400acf1.png)
+
    - Then attach elastic ip for server using [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
+  
      ![image](https://user-images.githubusercontent.com/106643382/194306762-dd2361f6-d266-4062-a37a-8d67272a746f.png)
+     
    - Then purchase a domain name for server from freenom (task1354.ml)
+   
    - ```cd /etc/nginx/sites-available/task1354.ml```
    - In this we have to configure Domain name & Document root path 
      ![image](https://user-images.githubusercontent.com/106643382/195326106-0906ae69-ced1-4895-8329-8584cfb963f6.png)
