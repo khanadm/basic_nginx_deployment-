@@ -26,13 +26,13 @@
    - First, update the list of packages using ```sudo apt update```
      
    - Now, install Nginx using ```sudo apt install nginx```
-   - 
-    ![image](https://user-images.githubusercontent.com/106643382/194303969-31a845ea-6fb2-46cc-8501-74ec71645bda.png)
     
    - To start Nginx run this command ```sudo systemctl start nginx```
    
+   - To enable nginx Run this command ```sudo systemctl enable nginx``` 
+    
    - To check status of nginx ```sudo systemctl status nginx```
-   - 
+   
      ![image](https://user-images.githubusercontent.com/106643382/194305213-0e81676e-2354-48bb-b4e7-072e4d5a8395.png)
      
    - To check whether Nginx is successfully installed or not, use ```sudo nginx -v```
