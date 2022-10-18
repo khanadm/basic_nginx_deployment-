@@ -44,10 +44,10 @@
    
    
    - For this, navigate to document root ```cd /var/www/html``` and create an index.html page using vim or nano.
-   - 
+  
    - For exit press Esc then press this : wq to exit.
    
-   - It will show on web server like this
+   - We have hit IP It will show on web server like this.
   
      ![image](https://user-images.githubusercontent.com/106643382/196166855-db2adc87-44fe-48c7-b4e4-74995cf12de7.png)
 
