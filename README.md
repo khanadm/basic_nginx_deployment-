@@ -24,18 +24,27 @@
  #### Second Step:  Insatll nginx in it
  
    - First, update the list of packages using ```sudo apt update```
-     ![image](https://user-images.githubusercontent.com/106643382/194303969-31a845ea-6fb2-46cc-8501-74ec71645bda.png)
+     
    - Now, install Nginx using ```sudo apt install nginx```
+   - 
+    ![image](https://user-images.githubusercontent.com/106643382/194303969-31a845ea-6fb2-46cc-8501-74ec71645bda.png)
+    
    - To start Nginx run this command ```sudo systemctl start nginx```
+   
    - To check status of nginx ```sudo systemctl status nginx```
+   - 
      ![image](https://user-images.githubusercontent.com/106643382/194305213-0e81676e-2354-48bb-b4e7-072e4d5a8395.png)
+     
    - To check whether Nginx is successfully installed or not, use ```sudo nginx -v```
    
    #### Third Step: Step Create a sample index.html page and deploy it on that Nginx server.
    
-   - For this, navigate to document root ```vim /var/www/html``` and create an index.html page using vim or nano. 
+   - For this, navigate to document root ```cd /var/www/html``` and create an index.html page using vim or nano.
+   -  
     ![image](https://user-images.githubusercontent.com/106643382/194305528-8a7052a8-417a-4f04-9adb-de840316b7a1.png)
+    
    - For exit press Esc then press this : wq to exit.
+   
    - It will show on web server like this
      ![image](https://user-images.githubusercontent.com/106643382/196166855-db2adc87-44fe-48c7-b4e4-74995cf12de7.png)
 ![image](https://user-images.githubusercontent.com/106643382/196166792-dc372445-224d-4df9-bb9e-9e96f400acf1.png)
