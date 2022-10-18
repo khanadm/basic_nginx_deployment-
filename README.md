@@ -75,7 +75,7 @@
    
      ![image](https://user-images.githubusercontent.com/106643382/194309542-d8254d64-6054-4627-bea1-3dc0617d0dfa.png)
      
-   - nginx -t 
+   - To check that there are no syntax errors in any of your Nginx files, use ```nginx -t```
    
    - This will show every thing is ok.
    
