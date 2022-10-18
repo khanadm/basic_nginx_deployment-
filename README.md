@@ -83,9 +83,9 @@
    
    - ``` apt-get update```
    
-   - ```sudo apt-get install certbot```
+   - To insatll certbox ```sudo apt-get install certbot```
    
-   -```apt-get install python3-certbot-nginx```
+   - To obtain an SSL certificate, we must install certbot software and the Nginx plugin. ```apt-get install python3-certbot-nginx```
    
    - To obtain a certificate for a domain. ```sudo certbot --nginx -d task1354.ml -d www.task1354.ml```
    
