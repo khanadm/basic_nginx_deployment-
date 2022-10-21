@@ -59,9 +59,9 @@
    
    ![image](https://user-images.githubusercontent.com/106643382/196352696-7b03715f-1627-40f9-8d99-07ed702fe46f.png)
    
-   - This is the main configuration file of nginx ```cd /etc/nginx/sites-available/task1354.ml```
+   - This is the configuration file of nginx ```vim /etc/nginx/sites-available/task1354.ml```
    
-   - In this we have to configure Domain name & Document root path 
+   - In this we have to configure Server name & Document root path 
    
      ![image](https://user-images.githubusercontent.com/106643382/195326106-0906ae69-ced1-4895-8329-8584cfb963f6.png)
      
@@ -75,15 +75,15 @@
    
      ![image](https://user-images.githubusercontent.com/106643382/194309542-d8254d64-6054-4627-bea1-3dc0617d0dfa.png)
      
-   - To check that there are no syntax errors in any of your Nginx files, use ```nginx -t```
+   - To check that there are no syntax errors in any of your Nginx files, use ```sudo nginx -t```
    
    - This will show every thing is ok.
    
    #### Fourth step : Insatall cetbox for SSL CERTIFICATION
    
-   - ``` apt-get update```
+   - ```suo apt-get update```
    
-   - To insatll certbox ```sudo apt-get install certbot```
+   - To insatll certbot ```sudo apt-get install certbot```
    
    - To obtain an SSL certificate, we must install certbot software and the Nginx plugin. ```apt-get install python3-certbot-nginx```
    
@@ -93,20 +93,13 @@
   
    ![image](https://user-images.githubusercontent.com/106643382/194316641-7c403bad-1eeb-4f86-8494-18df87a95637.png)
    
-   #### Fifth Step : Configure automation script for SSL renewal.
-  
-     
-   - This will take you through the steps of renewal. LetsEncrypt will only allow renewal when the certificate is within 30 days of expiry. Once               renewed the new certificate will be valid for 90 days from the date of renewal.
+   #### Fifth Step : Configure automation script for SSL renewal .
+   
+   ```sudo apt-get insatll certbot python3-certbot-nginx certbot 
+   
+   ``` corntab -e 
+   * * * * * certbot renew --nginix -d task1354.ml -d www.task1354.ml 
 
-   -  Renewing the certificate in this manner will not require you to stop and start Nginx and the Nginx config will be reloaded on a successful renewal        so that visitors to the site are automatically served the new certificate. 
-   
-   - Certbot automatically creates the script to renew the certificate twice a day. ```cat /etc/cron.d/certbot```
-  
-      ![image](https://user-images.githubusercontent.com/106643382/194525632-ff00a7ce-afbf-43d9-93f7-a8f7bcaad78c.png)
-   
-   - ``` certbot renew --cert-name task1354.ml --force-renewal```
-    
-     ![image](https://user-images.githubusercontent.com/106643382/194526267-991ae8aa-61c0-4acd-aeaf-83ff923daa43.png)
 
    
    
