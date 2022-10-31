@@ -27,19 +27,45 @@
   
  #### Second Step:  Insatll nginx in it
  
-   - First, update the list of packages using ```sudo apt update```
+   - First, update the list of packages using 
+    
+   ```sh
+   sudo apt update
+   ```
      
-   - Now, install Nginx using ```sudo apt install nginx```
+   - Now, install Nginx using 
+   
+    ```sh
+    sudo apt install nginx
+    ```
     
-   - To start Nginx run this command ```sudo systemctl start nginx```
+   - To start Nginx run this command 
     
-   - To check status of nginx ```sudo systemctl status nginx```
+      ```sh
+      sudo systemctl start nginx
+      ```
+    
+   - To check status of nginx 
+   
+     ```sh
+     sudo systemctl status nginx
+     ```
    
      ![image](https://user-images.githubusercontent.com/106643382/194305213-0e81676e-2354-48bb-b4e7-072e4d5a8395.png)
      
-   - To enable nginx Run this command ```sudo systemctl enable nginx``` 
      
-   - To check whether Nginx is successfully installed or not, use ```sudo nginx -v```
+   - To enable nginx Run this command 
+   
+   
+   ```sh
+   sudo systemctl enable nginx
+   ``` 
+     
+   - To check whether Nginx is successfully installed or not, use 
+    
+    ```sh
+    sudo nginx -v
+    ```
    
    
    ---
@@ -50,7 +76,9 @@
    
    
    
-   - For this, navigate to document root ```cd /var/www/html``` and create an index.html page using vim or nano.
+   - For this, navigate to document root ```sh
+   - cd /var/www/html
+   - ``` and create an index.html page using vim or nano.
   
    - For exit press Esc then press this : wq to exit.
    
