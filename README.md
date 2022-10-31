@@ -29,15 +29,17 @@
  
    - First, update the list of packages using 
     
-   ```sh
-   sudo apt update
-   ```
+    
+      ```sh
+      sudo apt update
+      ```
+    
      
    - Now, install Nginx using 
    
-    ```sh
-    sudo apt install nginx
-    ```
+      ```sh
+      sudo apt install nginx
+      ```
     
    - To start Nginx run this command 
     
@@ -63,9 +65,9 @@
      
    - To check whether Nginx is successfully installed or not, use 
     
-    ```sh
-    sudo nginx -v
-    ```
+     ```sh
+     sudo nginx -v
+     ```
    
    
    ---
@@ -113,6 +115,7 @@
      ![image](https://user-images.githubusercontent.com/106643382/194309542-d8254d64-6054-4627-bea1-3dc0617d0dfa.png)
      
    - To check that there are no syntax errors in any of your Nginx files, use 
+  
    
      ```sh
      sudo nginx -t
@@ -125,21 +128,21 @@
    
    #### Fourth step : Insatall cetbox for SSL CERTIFICATION
    
-    ```sh
+   ```sh
     sudo apt-get update
-    ```
+   ```
    
    - To obtain an SSL certificate, we must install certbot software and the Nginx plugin. 
     
-      ```sh
-      shapt-get certbot install python3-certbot-nginx
-      ```
+     ```sh
+     apt-get certbot install python3-certbot-nginx
+     ```
    
    - To obtain a certificate for a domain. 
     
-      ```sh
-      sudo certbot --nginx -d task1354.ml -d www.task1354.ml
-      ```
+     ```sh
+     sudo certbot --nginx -d task1354.ml -d www.task1354.ml
+     ```
    
    - This will issue certificate (in my case my domain name is task1354.ml)
   
@@ -150,19 +153,18 @@
    
    #### Fifth Step : Configure automation script for SSL renewal .
  
-  
-    First Install certbot 
-    
-    ```sh
-    sudo apt-get insatll certbot python3-certbot-nginx certbot
-    ``` 
-   
+   First Install certbot 
+
+   ```sh
+   sudo apt-get insatll certbot python3-certbot-nginx certbot
+   ```
+
    This will open the corn job file 
    
    ```sh
    corntab -e
    ```
-   
+
    In bottom  we have to configure Automation parameter According to need along with Domain name.
    
    ```* * * * * certbot renew --nginix -d task1354.ml -d www.task1354.ml``` 
@@ -171,6 +173,7 @@
    
    
    ---
-      ######                                        THANK YOU 
+   
+  ####                                      THANK YOU 
 
 
