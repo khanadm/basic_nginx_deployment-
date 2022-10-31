@@ -9,6 +9,8 @@
 - Configure domain and apply SSL.
 - Configure automation script for SSL renewal.
 
+---
+
 #### First step: Create an EC2 server
 
   - Firstly, log in to the AWS management console.
@@ -20,6 +22,8 @@
   - Click the Launch instance button
   - Take the public IP from the EC2 dashboard and use it to login inside the instance using ssh.
   - Finally, it will be logged in successfully if everything is configured correctly.
+  
+  ---
   
  #### Second Step:  Insatll nginx in it
  
@@ -36,6 +40,9 @@
    - To enable nginx Run this command ```sudo systemctl enable nginx``` 
      
    - To check whether Nginx is successfully installed or not, use ```sudo nginx -v```
+   
+   
+   ---
 
 
    
@@ -78,6 +85,9 @@
    - To check that there are no syntax errors in any of your Nginx files, use ```sudo nginx -t```
    
    - This will show every thing is ok.
+
+
+---
    
    #### Fourth step : Insatall cetbox for SSL CERTIFICATION
    
@@ -90,6 +100,9 @@
    - This will issue certificate (in my case my domain name is task1354.ml)
   
    ![image](https://user-images.githubusercontent.com/106643382/194316641-7c403bad-1eeb-4f86-8494-18df87a95637.png)
+   
+   
+  ---
    
    #### Fifth Step : Configure automation script for SSL renewal .
  
@@ -109,7 +122,7 @@
 
    
    
-   
+   ---
       ######                                        THANK YOU 
 
 
