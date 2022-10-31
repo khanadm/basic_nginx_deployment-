@@ -94,11 +94,15 @@
    #### Fifth Step : Configure automation script for SSL renewal .
  
   
-    Install certbot   ```sudo apt-get insatll certbot python3-certbot-nginx certbot``` 
+    First Install certbot 
+    
+    ```sudo apt-get insatll certbot python3-certbot-nginx certbot``` 
    
-   This will open the corn job file ``` corntab -e```
+   This will open the corn job file 
    
-   There we have to configure Automation parameter According to need along with Domain name
+   ``` corntab -e```
+   
+   In bottom  we have to configure Automation parameter According to need along with Domain name.
    
    * * * * * certbot renew --nginix -d task1354.ml -d www.task1354.ml 
 
