@@ -76,9 +76,11 @@
    
    
    
-   - For this, navigate to document root ```sh
-   - cd /var/www/html
-   - ``` and create an index.html page using vim or nano.
+   - For this, navigate to document root and create an index.html page using vim or nano.
+   
+   ```sh
+   cd /var/www/html
+   ```
   
    - For exit press Esc then press this : wq to exit.
    
@@ -110,7 +112,11 @@
    
      ![image](https://user-images.githubusercontent.com/106643382/194309542-d8254d64-6054-4627-bea1-3dc0617d0dfa.png)
      
-   - To check that there are no syntax errors in any of your Nginx files, use ```sudo nginx -t```
+   - To check that there are no syntax errors in any of your Nginx files, use 
+   
+     ```sh
+     sudo nginx -t
+     ```
    
    - This will show every thing is ok.
 
@@ -119,11 +125,21 @@
    
    #### Fourth step : Insatall cetbox for SSL CERTIFICATION
    
-   - ```sudo apt-get update```
+    ```sh
+    sudo apt-get update
+    ```
    
-   - To obtain an SSL certificate, we must install certbot software and the Nginx plugin. ```apt-get certbot install python3-certbot-nginx```
+   - To obtain an SSL certificate, we must install certbot software and the Nginx plugin. 
+    
+      ```sh
+      shapt-get certbot install python3-certbot-nginx
+      ```
    
-   - To obtain a certificate for a domain. ```sudo certbot --nginx -d task1354.ml -d www.task1354.ml```
+   - To obtain a certificate for a domain. 
+    
+      ```sh
+      sudo certbot --nginx -d task1354.ml -d www.task1354.ml
+      ```
    
    - This will issue certificate (in my case my domain name is task1354.ml)
   
@@ -137,11 +153,15 @@
   
     First Install certbot 
     
-    ```sudo apt-get insatll certbot python3-certbot-nginx certbot``` 
+    ```sh
+    sudo apt-get insatll certbot python3-certbot-nginx certbot
+    ``` 
    
    This will open the corn job file 
    
-   ``` corntab -e```
+   ```sh
+   corntab -e
+   ```
    
    In bottom  we have to configure Automation parameter According to need along with Domain name.
    
